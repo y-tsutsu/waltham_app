@@ -7,7 +7,7 @@ pkg_check_modules(WALTHAM REQUIRED waltham)
 include_directories(${WALTHAM_INCLUDE_DIRS})
 link_directories(${WALTHAM_LIBRARY_DIRS})
 
-add_executable(server server.cpp)
+add_executable(server myserver.cpp)
 target_link_libraries(server ${WALTHAM_LIBRARIES} -lev)
 
 #add_executable(client client.cpp)
